@@ -1,4 +1,4 @@
-#include "../h_files/write_png.h"
+#include "png_process.h"
 
 void write_png_file(char *file_name, Png *image) {
 

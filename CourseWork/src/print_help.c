@@ -1,4 +1,4 @@
-#include "../h_files/print_help.h"
+#include "main.h"
 
 void printHelp(){
 	printf("Используйте: ./my_paint [options] <file>\n\n"

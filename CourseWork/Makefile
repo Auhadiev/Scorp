@@ -1,9 +1,26 @@
-p = ./src/
+CXX = gcc
+CXXFLAGS = -c -Ih_files
 
-all: my_paint
+EXE = my_paint
+SRCDIR = ./src
+BINDIR = bin
 
-my_paint: $(p)main.c $(p)write_png.c $(p)read_png.c $(p)inversion.c $(p)is_digit.c $(p)is_valid.c $(p)blackwhite.c $(p)cut.c $(p)expand.c
-	gcc $(p)main.c $(p)clean_memory.c $(p)print_help.c $(p)print_info.c $(p)write_png.c $(p)read_png.c $(p)inversion.c $(p)is_digit.c $(p)is_valid.c $(p)blackwhite.c $(p)cut.c $(p)expand.c -lpng -o my_paint
+OBJECTS = $(patsubst $(SRCDIR)/%.c,$(BINDIR)/%.o,$(wildcard $(SRCDIR)/*.c))
+
+all: $(EXE)
+
+$(EXE): $(BINDIR) $(OBJECTS)
+	$(CXX) $(OBJECTS) -lpng -o $(EXE) $(LDFLAGS)
+	
+$(BINDIR)/%.o: $(SRCDIR)/%.c
+	$(CXX) $(CXXFLAGS) -c -MMD -o $@ -lpng $<
+
+include $(wildcard $(BINDIR)/*.d)
+
+$(BINDIR):
+	mkdir -p $(BINDIR)
 
 clean:
-	rm -rf my_paint
+	rm -rf $(BINDIR) $(EXE)
+
+.PHONY: clean all

@@ -1,16 +1,5 @@
-#include "../h_files/structures.h"
-#include "../h_files/clean_memory.h"
-#include "../h_files/print_info.h"
-#include "../h_files/print_help.h"
-#include "../h_files/cut.h"
-#include "../h_files/inversion.h"
-#include "../h_files/expand.h"
-#include "../h_files/is_digit.h"
-#include "../h_files/read_png.h"
-#include "../h_files/write_png.h"
-#include "../h_files/blackwhite.h"
-#include "../h_files/is_valid.h"
-
+#include "main.h"
+#include "png_process.h"
 
 int main(int argc, char **argv) {
     if (argc == 1){

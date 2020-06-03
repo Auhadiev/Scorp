@@ -1,4 +1,4 @@
-#include "../h_files/blackwhite.h"
+#include "png_process.h"
 
 void blackWhite(Png *image, int x1, int y1, int x2, int y2) {
     int ch = 0;

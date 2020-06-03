@@ -1,4 +1,4 @@
-#include "../h_files/expand.h"
+#include "png_process.h"
 
 void expand(Png *image, int check, int x, int y, char color){
     int dx = 0, dy = 0, r = 0, g = 0, b = 0;

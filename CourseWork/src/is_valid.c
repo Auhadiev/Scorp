@@ -1,10 +1,12 @@
-#include "../h_files/is_valid.h"
+#include "main.h"
 
 int isValid(char* color){
-	if(!strcmp(color, "black") || !strcmp(color, "white") || !strcmp(color, "red") || !strcmp(color, "green") || !strcmp(color, "blue") || !strcmp(color, "yellow") || !strcmp(color, "purple") || !strcmp(color, "turquoise"))
-		return 1;
-	else
-		return 0;
+	char* colors[] = {"black", "white", "red", "green", "blue", "yellow", "purple", "turquoise"};
+	for(int i = 0; i<8; i++){
+		if(!strcmp(color, colors[i]))
+			return 1;
+	}
+	return 0;
 }
 
 

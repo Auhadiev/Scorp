@@ -1,4 +1,4 @@
-#include "../h_files/is_digit.h"
+#include "main.h"
 
 int isDigit(char *arg){
     for(int i = 0; i<strlen(arg); i++)

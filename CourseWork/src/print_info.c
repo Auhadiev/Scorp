@@ -1,4 +1,4 @@
-#include "../h_files/print_info.h"
+#include "main.h"
 
 void printInfo(Png *image){
     printf("Ширина: %d\n", image->width);

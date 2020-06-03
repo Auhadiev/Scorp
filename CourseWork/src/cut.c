@@ -1,4 +1,4 @@
-#include "../h_files/cut.h"
+#include "png_process.h"
 
 void cut(Png *image, int check, int x, int y){
     int dx = 0, dy = 0;

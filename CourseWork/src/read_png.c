@@ -1,4 +1,4 @@
-#include "../h_files/read_png.h"
+#include "png_process.h"
 
 int read_png_file(char *file_name, Png *image){
     char header[8];
