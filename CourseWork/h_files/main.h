@@ -8,8 +8,6 @@ void cleanMemory(Png *image);
 
 int isDigit(char *arg);
 
-int isValid(char* color);
-
 void printHelp();
 
 void printInfo(Png *image);

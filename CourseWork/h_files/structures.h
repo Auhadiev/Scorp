@@ -25,7 +25,7 @@ typedef struct GlobalArguments_t{
 static const char *optString = "C:is:e:bIhc:E:S:o:?";
 
 static const struct option longOpts[]= {
-    {"invers", no_argument, NULL, 'i'},
+    {"inverse", no_argument, NULL, 'i'},
     {"start", required_argument, NULL, 's'},
     {"end", required_argument, NULL, 'e'},
     {"blackWhite", no_argument, NULL, 'b'},
