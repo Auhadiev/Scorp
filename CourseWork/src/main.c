@@ -1,14 +1,5 @@
-#include "main.h"
+#include "func_in_main.h"
 #include "png_process.h"
-
-int isValid(char* color){
-	char* colors[] = {"black", "white", "red", "green", "blue", "yellow", "purple", "turquoise"};
-	for(int i = 0; i<8; i++){
-		if(!strcmp(color, colors[i]))
-			return 1;
-	}
-	return 0;
-}
 
 int main(int argc, char **argv) {
     if (argc == 1){

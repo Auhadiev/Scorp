@@ -28,7 +28,7 @@ static const struct option longOpts[]= {
     {"inverse", no_argument, NULL, 'i'},
     {"start", required_argument, NULL, 's'},
     {"end", required_argument, NULL, 'e'},
-    {"blackWhite", no_argument, NULL, 'b'},
+    {"blackwhite", no_argument, NULL, 'b'},
     {"info", no_argument, NULL, 'I'},
     {"help", no_argument, NULL, 'h'},
     {"cut", required_argument, NULL, 'c'},
